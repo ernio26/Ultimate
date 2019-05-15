@@ -6,7 +6,11 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
+<<<<<<< HEAD
     background: url(../Images/bcknav.jpg);
+=======
+    background-color: #111; /* Black*/
+>>>>>>> 03113862538bcc809d7cb10ed5d77d8548f69fb0
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -48,6 +52,7 @@
     .sidenav a {font-size: 18px;}
   }
 
+<<<<<<< HEAD
   .button {
     display: inline-block;
     border-radius: 4px;
@@ -90,3 +95,26 @@
   }
 
   
+=======
+  button:after {
+	top: -100%;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	background: url(images/galactic.jpg);
+	border-radius: 5px;
+    content: '*click*';
+    color: rgb(255, 255, 255);
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+
+.b {
+    background: url(images/galactic.jpg);
+    transform-style: preserve-3d;
+}
+.b:hover {
+    transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+>>>>>>> 03113862538bcc809d7cb10ed5d77d8548f69fb0
