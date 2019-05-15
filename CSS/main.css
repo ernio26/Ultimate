@@ -6,7 +6,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background: url(Images/bcknav.jpg);
+    background: url(../Images/bcknav.jpg);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -51,7 +51,7 @@
   .button {
     display: inline-block;
     border-radius: 4px;
-    background: url(Images/galactic.jpg);
+    background: url(../Images/galactic.jpg);
     border: none;
     color: rgb(199, 194, 194);
     text-align: center;
@@ -81,10 +81,12 @@
   
   .button:hover span {
     padding-right: 25px;
-    background: url(Images/galactic.jpg);
+    background: url(../Images/galactic.jpg);
   }
   
   .button:hover span:after {
     opacity: 1;
     right: 0;
   }
+
+  
