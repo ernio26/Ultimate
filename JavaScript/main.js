@@ -5,7 +5,7 @@ function Klik() {
 }
 
 $(document).ready(function(){
-    $("p").click(function(){
+    $("works").click(function(){
       alert("It works");
     });
   });

@@ -6,10 +6,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-
     background: url(../Images/bcknav.jpg);
-
-    background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -39,41 +36,37 @@
     margin-left: 50px;
   }
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
-  .button {
+ /* Button-nav */
+  .button-nav {
     display: inline-block;
     border-radius: 4px;
     background: url(../Images/galactic.jpg);
     border: none;
     color: rgb(199, 194, 194);
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     padding: 20px;
-    width: 200px;
+    width: 180px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    position: fixed;
   }
 
-  .button span {
+  .button-nav span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
   
-  .button span:after {
+  .button-nav span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -82,13 +75,65 @@
     transition: 0.5s;
   }
   
-  .button:hover span {
+  .button-nav:hover span {
     padding-right: 25px;
     background: url(../Images/galactic.jpg);
   }
   
-  .button:hover span:after {
+  .button-nav:hover span:after {
     opacity: 1;
     right: 0;
   }
 
+  div.background1 {
+    background: url(../Images/s1.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.background2 {
+    background: url(../Images/s2.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.background3 {
+    background: url(../Images/s3.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.background4 {
+    background: url(../Images/s4.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.background5 {
+    background: url(../Images/s5.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.background6 {
+    background: url(../Images/s6.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.background7 {
+    background: url(../Images/s7.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+  }
+
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  div.login-box {
+    background-image: url(../Images/s1.jpg);
+  }
