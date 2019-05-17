@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+  }
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -120,12 +123,19 @@
     border: 2px solid black;
   }
 
+  div.background8 {
+    background: url(../Images/s8.jpg) repeat;
+    border: 2px solid black;
+  }
+
   div.transbox {
+    height: 600px;
     margin: 30px;
     background-color: #ffffff;
     border: 1px solid black;
-    opacity: 0.6;
+    opacity: 0.5;
     filter: alpha(opacity=60); /* For IE8 and earlier */
+    background: #a09b9b;
   }
 
   div.transbox p {
@@ -137,3 +147,73 @@
   div.login-box {
     background-image: url(../Images/s1.jpg);
   }
+
+  #login-box
+{
+    position: relative;
+    margin: 5% auto;
+    height: 200px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+input[type="text"],
+input[type="password"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="submit"]
+{
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+    background: #f01818;
+    transition: 0.2s ease;
+}
+
+.zoom {
+  padding: 15px;
+  transition: transform .2s;
+  width: 200px;
+  height: 10px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+ transform: scale(1.5);
+}
+
+.zoom.img{
+  height: 13rem;
+  width: 100%;
+  margin: 1em;
+}

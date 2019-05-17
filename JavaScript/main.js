@@ -20,3 +20,23 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+// Below function Executes on click of login button.
+function validate(){
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  if ( username == "abra" && password == "cadabra") {
+    alert ("Welcome");
+    $("#mainDiv").html("Here we go");
+    }
+    else{
+        alert("Try again");
+      }
+      }
+
+      $(document).ready(function() {
+        $("#myButton").click(function() {
+          $("#mainDiv").html("Here we go");
+        });
+      });
+
+      
