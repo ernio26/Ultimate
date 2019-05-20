@@ -39,4 +39,8 @@ function validate(){
         });
       });
 
-      
+      $(document).ready(function(){
+        $("stage1").click(function(){
+          $("#sstage1").load("Ajax/stage1.html");
+        });
+      });
