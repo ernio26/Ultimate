@@ -193,3 +193,4 @@ input[type="submit"]:focus
   opacity: 0.4;
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
+

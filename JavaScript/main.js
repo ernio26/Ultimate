@@ -21,7 +21,7 @@ function closeNav() {
 }
 
 // Below function Executes on click of login button.
-function validate(){
+function validate() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   if ( username == "abra" && password == "cadabra") {
@@ -39,8 +39,4 @@ function validate(){
         });
       });
 
-      $(document).ready(function(){
-        $("stage1").click(function(){
-          $("#sstage1").load("Ajax/stage1.html");
-        });
-      });
+
