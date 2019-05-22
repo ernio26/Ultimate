@@ -39,4 +39,7 @@ function validate() {
         });
       });
 
-
+      function myFunction() {
+        var x = document.getElementById("yourname").value;
+        document.getElementById("demo").innerHTML = x;
+      }

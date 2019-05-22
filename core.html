@@ -48,48 +48,52 @@
 
         <!-- Home -->
         <div class="main background1" onclick="closeNav()" id="section1">
-                    <center>    
-                    <div id="mainDiv" class="transbox text">
-                        Click here to see how AJAX works
-                        <input type="button" id="myButton" value="Click me to change"/>
-                    </div>
-                    </center>
-
-                        <!-- Login Box -->
-                        <div id="login-box">
-                            <center>
-                                <div class="transbox">
-                                        <h1>Riddle me this</h1>
-                                        <input type="text" name="username" id="username" placeholder="First part: abra"/>
-                                        <input type="password" name="password" id="password" placeholder="Try to guess"/>
-                                        <input type="submit" name="submit" onclick="validate()" value="Have Fun"/>
-                                </div>
-                            </center>
-                        </div>
-
-            <!--Modal Login-->
+        <br><br><br>
             <center>
             <div class="container">
-                <button onclick="document.getElementById('01').style.display='block'">Enter my domain</button>
-                              
-                <div id="01" class="modal">
-                    <div class="modal-content card-4 animate-zoom" style="max-width:600px">
-                              
-                        <div class="center"><br>
-                            <span onclick="document.getElementById('01').style.display='none'" class="button xlarge hover-red display-topright" title="Close Modal">&times;</span>
-                        </div>
-                              
-                        <form class="container">
-                            <div class="section">
-                                <label><b>Your name</b></label>
-                                <input class="input border margin-bottom" type="text" placeholder="Type your name" name="usrname" required>
-                                <button class="button block green section padding" type="submit">Choose</button>
+                 <button class="button-modal zoom" onclick="document.getElementById('01').style.display='block'">Enter my domain</button>
+                                                
+                    <div id="01" class="modal">
+                        <div class="modal-content card-4 animate-zoom" style="max-width:600px">
+                            <div class="center"><br>
+                                <span onclick="document.getElementById('01').style.display='none'" class="button" title="Close Modal">&times;</span>
                             </div>
-                        </form>
+                            <form class="container">
+                                <div class="section">
+                                    <label><b>Your name</b></label>
+                                    <input id="yourname" value="" type="text" placeholder="Choose wisely" name="yournameis" required><br>
+                                    <button onclick="myFunction(); document.getElementById('01').style.display='none'" class="button" type="submit">Choose</button><br><br>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
             </div>
             </center>
+
+        <div id="login-box">
+            <center>
+            <div class="transbox">
+                <h1>Riddle me this</h1>
+                <input type="text" name="username" id="username" placeholder="First part: abra"/>
+                <input type="password" name="password" id="password" placeholder="Try to guess"/>
+                <input type="submit" name="submit" onclick="validate()" value="Have Fun"/>
+            </div>
+            </center>
+        </div>
+
+        <center>    
+        <div id="mainDiv" class="transbox text">
+            Click here to see how AJAX works
+            <input type="button" id="myButton" value="Click me to change"/>
+        </div>
+        </center>
+
+        <center>
+            <h1 id="" style="color:white">
+                Welcome, 
+                <p id="demo"></p>
+            </h1>
+        </center>
 
         </div>
 
@@ -119,7 +123,7 @@
 
         <!-- Extras -->
         <div class="main background8" onclick="closeNav()" id="section8">
-        <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -150,7 +154,6 @@
                         <img src="Images/extra.jpg" class="img-thumbnail zoom">
                     </div>
                 </div>
-
             </div>
         </div>
 
