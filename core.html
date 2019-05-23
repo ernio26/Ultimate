@@ -61,8 +61,8 @@
                             <form class="container">
                                 <div class="section">
                                     <label><b>Your name</b></label>
-                                    <input id="yourname" value="" type="text" placeholder="Choose wisely" name="yournameis" required><br>
-                                    <button onclick="myFunction(); document.getElementById('01').style.display='none'" class="button" type="submit">Choose</button><br><br>
+                                    <input type="text" placeholder="Choose wisely" id="yourname" value="" required><br>
+                                    <button onclick="myFunction(); document.getElementById('01').style.display='none'" class="button" type="button">Choose</button><br><br>
                                 </div>
                             </form>
                         </div>
@@ -81,6 +81,12 @@
             </center>
         </div>
 
+        <center>
+            <div id="Ajax">
+                <input type="button" id="ajaxbutton" value="Click here">
+            </div>
+        </center>
+
         <center>    
         <div id="mainDiv" class="transbox text">
             Click here to see how AJAX works
@@ -89,9 +95,8 @@
         </center>
 
         <center>
-            <h1 id="" style="color:white">
-                Welcome, 
-                <p id="demo"></p>
+            <h1 style="color:white">
+                Welcome, <p id="name"></p>
             </h1>
         </center>
 

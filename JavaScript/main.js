@@ -41,5 +41,11 @@ function validate() {
 
       function myFunction() {
         var x = document.getElementById("yourname").value;
-        document.getElementById("demo").innerHTML = x;
+        document.getElementById("name").innerHTML = x;
       }
+
+      $(document).ready(function() {
+        $("#ajaxbutton").click(function() {
+          $("#Ajax").get("ajax.html");
+        });
+      });
