@@ -46,6 +46,18 @@ function validate() {
 
       $(document).ready(function() {
         $("#ajaxbutton").click(function() {
-          $("#Ajax").get("ajax.html");
+          $("#Ajax").load("ajax.html");
         });
       });
+
+      var num = 100;
+      var radius = 2;
+      var max = 300;
+      createRandomNodes(100, 2, 300);
+
+      var btnReset = document.getElementById("btnReset");
+      btnReset.addEventListener("click", function() {
+          createRandomNodes(num, radius, max);
+      });
+
+      
