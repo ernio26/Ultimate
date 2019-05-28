@@ -1,10 +1,9 @@
 html, body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  body {
-    background-image: radial-gradient(circle, #fff, #ddd, #555);
-  }
-  
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: radial-gradient(circle, #fff, #ddd, #555);
+}
